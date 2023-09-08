@@ -7,7 +7,7 @@
     "cache_volumes": {
       "type": "string",
       "description": "A space separated list of paths to cache",
-      "default": ""
+      "default": "$HOME/.config"
     }
   },
   "mounts": [
