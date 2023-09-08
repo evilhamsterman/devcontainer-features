@@ -1,0 +1,23 @@
+{
+  "name": "Generic cache persistence",
+  "id": "generic-cache-persistence",
+  "version": "0.0.1",
+  "description": "Preserve a list of folders across ",
+  "options": {
+    "cache_volumes": {
+      "type": "string",
+      "description": "A space separated list of paths to cache",
+      "default": ""
+    }
+  },
+  "mounts": [
+    {
+      "source": "generic-cache",
+      "target": "/dc/cache",
+      "type": "volume"
+    }
+  ],
+  "containerEnv": {
+    "CACHE_HOME": "/dc/home"
+  }
+}
